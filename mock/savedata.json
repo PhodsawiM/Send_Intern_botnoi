@@ -1,0 +1,286 @@
+{
+  "save": [
+    {
+      "id": "ex8-98",
+      "name": "Deoxys ex",
+      "nationalPokedexNumber": 386,
+      "imageUrl": "https://images.pokemontcg.io/ex8/98.png",
+      "imageUrlHiRes": "https://images.pokemontcg.io/ex8/98_hires.png",
+      "supertype": "Pokémon",
+      "subtype": "EX",
+      "ability": {
+        "name": "Form Change",
+        "text": "Once during your turn (before your attack), you may search your deck for another Deoxys ex and switch it with Deoxys ex. (Any cards attached to Deoxys ex, damage counters, Special Conditions, and effects on it are now on the new Pokémon.) If you do, put Deoxys ex on top of your deck. Shuffle your deck afterward. You can't use more than 1 Form Change Poké-Power each turn.",
+        "type": "Poké-Power"
+      },
+      "hp": "110",
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "98",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare Holo EX",
+      "series": "EX",
+      "set": "Deoxys",
+      "setCode": "ex8",
+      "text": [
+        "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Psychic Burst",
+          "text": "You may discard 2 Energy attached to Deoxys ex. If you do, this attack does 50 damage plus 20 more damage for each Energy attached to the Defending Pokémon.",
+          "damage": "50+",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "type": "Psychic"
+    },
+    {
+      "id": "xyp-XY05",
+      "name": "Xerneas",
+      "nationalPokedexNumber": 716,
+      "imageUrl": "https://images.pokemontcg.io/xyp/XY05.png",
+      "imageUrlHiRes": "https://images.pokemontcg.io/xyp/XY05_hires.png",
+      "supertype": "Pokémon",
+      "subtype": "Basic",
+      "hp": "130",
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "XY05",
+      "artist": "5ban Graphics",
+      "rarity": "Rare",
+      "series": "XY",
+      "set": "XY Black Star Promos",
+      "setCode": "xyp",
+      "attacks": [
+        {
+          "cost": [
+            "Fairy"
+          ],
+          "name": "Geomancy",
+          "text": "Choose 2 of your Benched Pokémon. For each of those Pokémon, search your deck for a Fairy Energy card and attach it to that Pokémon. Shuffle your deck afterward.",
+          "damage": "",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Fairy",
+            "Fairy",
+            "Colorless"
+          ],
+          "name": "Rainbow Spear",
+          "text": "Discard an Energy attached to this Pokémon.",
+          "damage": "100",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Darkness",
+          "value": "-20"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "type": "Fairy"
+    },
+    {
+      "id": "pop9-17",
+      "name": "Turtwig",
+      "nationalPokedexNumber": 387,
+      "imageUrl": "https://images.pokemontcg.io/pop9/17.png",
+      "imageUrlHiRes": "https://images.pokemontcg.io/pop9/17_hires.png",
+      "supertype": "Pokémon",
+      "subtype": "Basic",
+      "hp": "60",
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "17",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "series": "POP",
+      "set": "POP Series 9",
+      "setCode": "pop9",
+      "attacks": [
+        {
+          "cost": [
+            "Grass"
+          ],
+          "name": "Absorb",
+          "text": "Remove 1 damage counter from Turtwig.",
+          "damage": "10",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Parboil",
+          "text": "If you have Chimchar in play, this attack does 40 damage plus 20 more damage and the Defending Pokémon is now Burned.",
+          "damage": "40+",
+          "convertedEnergyCost": 3
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Water",
+          "value": "-20"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "type": "Grass"
+    },
+    {
+      "id": "ex16-1",
+      "name": "Aggron",
+      "nationalPokedexNumber": 306,
+      "imageUrl": "https://images.pokemontcg.io/ex16/1.png",
+      "imageUrlHiRes": "https://images.pokemontcg.io/ex16/1_hires.png",
+      "supertype": "Pokémon",
+      "subtype": "Stage 2",
+      "evolvesFrom": "Lairon",
+      "ability": {
+        "name": "Terraforming",
+        "text": "Once during your turn (before your attack), you may look at the top 5 cards from your deck and put them back on top of your deck in any order. This power can't be used if Aggron is affected by a Special Condition.",
+        "type": "Poké-Power"
+      },
+      "hp": "110",
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 4,
+      "number": "1",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "series": "EX",
+      "set": "Power Keepers",
+      "setCode": "ex16",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Metal Claw",
+          "text": "",
+          "damage": "50",
+          "convertedEnergyCost": 3
+        },
+        {
+          "cost": [
+            "Metal",
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "name": "Mix-Up",
+          "text": "Your opponent discards the top card of his or her deck.",
+          "damage": "70",
+          "convertedEnergyCost": 4
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Grass",
+          "value": "-30"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "type": "Metal"
+    },
+    {
+      "id": "dp6-90",
+      "name": "Cubone",
+      "nationalPokedexNumber": 104,
+      "imageUrl": "https://images.pokemontcg.io/dp6/90.png",
+      "imageUrlHiRes": "https://images.pokemontcg.io/dp6/90_hires.png",
+      "supertype": "Pokémon",
+      "subtype": "Basic",
+      "hp": "60",
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "90",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Common",
+      "series": "Diamond & Pearl",
+      "set": "Legends Awakened",
+      "setCode": "dp6",
+      "attacks": [
+        {
+          "cost": [
+            "Colorless"
+          ],
+          "name": "Headbutt",
+          "text": "",
+          "damage": "10",
+          "convertedEnergyCost": 1
+        },
+        {
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "name": "Bonemerang",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads.",
+          "damage": "20×",
+          "convertedEnergyCost": 2
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Lightning",
+          "value": "-20"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "+10"
+        }
+      ],
+      "type": "Fighting"
+    }
+  ]
+}

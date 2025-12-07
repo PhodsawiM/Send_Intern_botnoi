@@ -1,0 +1,105 @@
+<div class="main-container">
+
+  <h1 class="app-title">My Pokédex</h1>
+
+  <div class="content-area">
+    <div class="card-grid">
+      
+      <div class="dex-card" *ngFor="let p of pokedex"  [style.background-color]="getCardColor(p)"
+  >
+          <!-- {{getCardColor(p)}} -->
+        <div class="card-left">
+          <img [src]="p.imageUrl" [alt]="p.name">
+        </div>
+
+        <div class="card-right">
+          <div class="card-header">
+            <h3 class="pokemon-name">{{ p.name }}</h3>
+            <button class="remove-btn" (click)="remove(p)">×</button>
+          </div>
+
+            <div class="stat-row" *ngIf="p.supertype === 'Pokémon'">
+              <span class="stat-label">HP</span>
+              <div class="progress-bg">
+                <div class="progress-fill" [style.width.%]="getHpWidth(p.hp)"></div>
+              </div>
+              <span class="stat-value" style="margin-left:8px; min-width:36px; text-align:right;">
+                {{ getHpNumber(p.hp) }}
+              </span>
+            </div>
+
+            <div class="stat-row" *ngIf="p.supertype === 'Pokémon'">
+              <span class="stat-label">STR</span>
+              <div class="progress-bg">
+                <div class="progress-fill" [style.width.%]="getStrWidth(p.attacks)"></div>
+              </div>
+              <span class="stat-value" style="margin-left:8px; min-width:36px; text-align:right;">
+                {{ (getStrWidth(p.attacks) | number) }}%
+              </span>
+            </div>
+
+            <!-- waek -->
+            <div class="stat-row" *ngIf="p.supertype === 'Pokémon'">
+              <span class="stat-label">WEAK</span>
+              <div class="progress-bg">
+                <div class="progress-fill" [style.width.%]="getWeakWidth(p.weaknesses)"></div>
+              </div>
+              <span class="stat-value" style="margin-left:8px; min-width:36px; text-align:right;">
+                {{ getWeakCount(p.weaknesses) }}
+              </span>
+            </div>
+
+          <div class="stat-row" *ngIf="p.supertype === 'Pokémon'">
+            <span class="stat-label">DMG</span>
+            <div class="progress-bg">
+              <div class="progress-fill" [style.width.%]="getDamagePercent(p.attacks)"></div>
+            </div>
+            <span class="stat-value" style="margin-left:8px; min-width:36px; text-align:right;">
+              {{ getDamageValue(p.attacks) }}
+            </span>
+          </div>
+          
+            <!-- hap -->
+            <div class="stat-row" *ngIf="p.supertype === 'Pokémon'">
+              <span class="stat-label">HAP</span>
+              <!-- <div class="progress-bg">
+                <div class="progress-fill" [style.width.%]="getHappinessPercent(c)"></div>
+              </div> -->
+              <div class="happiness-row">
+                <div>
+                  <span *ngFor="let _ of getHappinessIcons(getHappiness(p))" class="happy-icon">
+                    <img src="assets/cute.png" width="14" />
+                  </span>
+                </div>
+                <span class="stat-value" style="margin-left:8px; min-width:36px; text-align:right;">
+                  {{ getHappiness(p) }}
+                </span>
+              </div>
+            </div>
+        </div>
+      </div> </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="add-button-circle" (click)="openPopup()">
+      <span>+</span>
+    </div>
+    <div class="clear-button" (click)="remove_all()">
+      <span>
+        Clear
+      </span>
+    </div>
+    <div class="save-button" (click)="saveData()">
+      <span>
+        Save
+      </span>
+  </div>
+
+</div>
+
+<app-pokemon-popup
+  *ngIf="isPopupOpen"
+  [selectedList]="pokedex"
+  (onSelect)="addToPokedex($event)"
+  (onClose)="closePopup()">
+</app-pokemon-popup>

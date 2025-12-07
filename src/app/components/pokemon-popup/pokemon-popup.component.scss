@@ -1,0 +1,175 @@
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  height: 90%;
+  max-width: 700px;
+  max-height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+.popup-content {
+  overflow-y: auto;
+  margin-top: 15px;
+  padding-right: 5px;
+}
+
+.SSerch{
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.card-item {
+  display: flex;
+  cursor: pointer;
+  // border: 1px solid #000000c7;
+  box-shadow: inset 0 0 20px #bd0000;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+  // background: #eeeeee;
+}
+
+.card-item:hover {
+  padding: 15px;
+  background: #bd0000;
+  color: rgb(85, 0, 0);
+  // box-shadow: #0c0808 0px 5px 5px -10px;
+  box-shadow: inset 0 0 50px #ffffff70;
+  text-shadow: white 0px 0px 5px;
+}
+
+
+.card-item img {
+  width: 13vw;
+  height: auto;
+  border-radius: 10px;
+}
+
+.search-box {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.info {
+  display: block;
+  // margin-top: 15px;
+  width: 100vw;
+  padding-inline: 20px;
+}
+
+
+
+
+.name_and_select {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+}
+.name_and_select div {
+  opacity: 0;
+  visibility: hidden;
+  background: #f80000;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 1000px;
+  cursor: pointer;
+  box-shadow: #eeeeee 0px 0px 10px 0px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+
+  transition: 
+    opacity 1s ease,
+    visibility 1.5s ease,
+    background 0.25s,
+    color 0.25s;
+}
+
+.card-item:hover .name_and_select div {
+  opacity: 1;
+  visibility: visible;
+}
+
+.name_and_select div:hover {
+  background: #ffffff;
+  color: #5e0000;
+}
+
+.stat-value {
+  margin-left: 8px;
+  width: 40px;
+  text-align: right;
+  font-weight: 600;
+  color: inherit;
+}
+
+
+
+.card-item:hover .stat-label {
+  transition: color 0.25s;
+  color: #5e0000;
+  text-shadow: white 0px 0px 5px;
+}
+
+.stat-row { display: flex; align-items: center; margin-bottom: 6px; }
+.stat-label { width: 55px; font-weight: bold; font-size: 1rem; color: #333; }
+.progress-bg { flex: 1; height: 22px; background: #e4e4e4; border-radius: 11px; overflow: hidden; box-shadow: inset 0 1px 2px rgba(0,0,0,0.1); }
+.progress-fill { height: 100%; background: #f3701a; border-radius: 11px; }
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #000000;
+  cursor: pointer;
+  line-height: 0.8;
+  padding: 0 5px;
+  font-family: 'Gaegu', cursive;
+}
+.remove-btn:hover { color: rgb(226, 0, 0); }
+
+
+.happiness-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.happy-icon img {
+  width: 30px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.happy-icon img:hover {
+  transform: scale(1.2);
+}
+
